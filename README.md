@@ -11,40 +11,10 @@ Out main objective is perform EDA on the given dataset and draw useful conclusio
 We are given a hotel bookings dataset. This dataset contains booking information for a city hotel and a resort hotel. It contains the following features.
 
 ```
-- hotel: Name of hotel ( City or Resort)
-- is_canceled: Whether the booking is canceled or not (0 for no canceled and 1 for canceled)
-- lead_time: time (in days) between booking transaction and actual arrival.
-- arrival_date_year: Year of arrival
-- arrival_date_month: month of arrival
-- arrival_date_week_number: week number of arrival date.
-- arrival_date_day_of_month: Day of month of arrival date
-- stays_in_weekend_nights: No. of weekend nights spent in a hotel
-- stays_in_week_nights: No. of weeknights spent in a hotel
-- adults: No. of adults in single booking record.
-- children: No. of children in single booking record.
-- babies: No. of babies in single booking record. 
-- meal: Type of meal chosen 
-- country: Country of origin of customers (as mentioned by them)
-- market_segment: What segment via booking was made and for what purpose.
-- distribution_channel: Via which medium booking was made.
-- is_repeated_guest: Whether the customer has made any booking before(0 for No and 1 for 
-                     Yes)
-- previous_cancellations: No. of previous canceled bookings.
-- previous_bookings_not_canceled: No. of previous non-canceled bookings.
-- reserved_room_type: Room type reserved by a customer.
-- assigned_room_type: Room type assigned to the customer.
-- booking_changes: No. of booking changes done by customers
-- deposit_type: Type of deposit at the time of making a booking (No deposit/ Refundable/ No refund)
-- agent: Id of agent for booking
-- company: Id of the company making a booking
-- days_in_waiting_list: No. of days on waiting list.
-- customer_type: Type of customer(Transient, Group, etc.)
-- adr: Average Daily rate.
-- required_car_parking_spaces: No. of car parking asked in booking
-- total_of_special_requests: total no. of special request.
-- reservation_status: Whether a customer has checked out or canceled,or not showed 
-- reservation_status_date: Date of making reservation status.
-```
+- 
+
+
+
 
 - Total number of rows in data: 119390
 - Total number of columns: 32
@@ -109,7 +79,7 @@ Mainly performed using Matplotlib and Seaborn library and the following graph an
    - Pie Chart.
    - Line Plot.
    - Heatmap.
-- Box Plot
+
              
 ###  Univariate Analysis:
 
@@ -149,28 +119,58 @@ We tried to answer following questions
 ```
 
 ## Conclusion
+```
+ 1.)City hotels are the most preferred hotel type by the guests. We can say City hotel is the busiest hotel.
+ 2.)27.5 % bookings were got cancelled out of all the bookings.
+ 3.)Only 3.9 % people were revisited the hotels. Rest 96.1 % were new guests. Thus retention rate is low.
+ 4.)The percentage of 0 changes made in the booking was more than 82 %. Percentage of Single changes made was about 10%.
+ 5.)Most of the customers (91.6%) do not require car parking spaces.
+ 6.)79.1 % bookings were made through TA/TO (travel agents/Tour operators).
+ 7.)BB( Bed & Breakfast) is the most preferred type of meal by the guests.
+ 8.)Maximum number of guests were from Portugal, i.e. more than 25000 guests.
+ 9.)Most of the bookings for City hotels and Resort hotel were happened in 2016.
+ 10.)Average ADR for city hotel is high as compared to resort hotels. These City hotels are generating more revenue than the resort hotels.
+ 11.)Booking cancellation rate is high for City hotels which almost 30 %.
+ 12.)Average lead time for resort hotel is high.
+ 13.)Waiting time period for City hotel is high as compared to resort hotels. That means city hotels are much busier than Resort hotels.
+ 14.)Resort hotels have the most repeated guests.
+ 15.)Optimal stay in both the type hotel is less than 7 days. Usually people stay for a week.
+ 16.)Almost 19 % people did not cancel their bookings even after not getting the same room which they reserved while booking hotel. Only 2.5 % people cancelled the booking.
+```
 
-```City hotels are the most preferred hotel type by the guests. We can say City hotel is the busiest hotel.
-27.5 % bookings were got cancelled out of all the bookings.
-Only 3.9 % people were revisited the hotels. Rest 96.1 % were new guests. Thus retention rate is low.
-The percentage of 0 changes made in the booking was more than 82 %. Percentage of Single changes made was about 10%.
-Most of the customers (91.6%) do not require car parking spaces.
-79.1 % bookings were made through TA/TO (travel agents/Tour operators).
-BB( Bed & Breakfast) is the most preferred type of meal by the guests.
-Maximum number of guests were from Portugal, i.e. more than 25000 guests.
-Most of the bookings for City hotels and Resort hotel were happened in 2016.
-Average ADR for city hotel is high as compared to resort hotels. These City hotels are generating more revenue than the resort hotels.
-Booking cancellation rate is high for City hotels which almost 30 %.
-Average lead time for resort hotel is high.
-Waiting time period for City hotel is high as compared to resort hotels. That means city hotels are much busier than Resort hotels.
-Resort hotels have the most repeated guests.
-Optimal stay in both the type hotel is less than 7 days. Usually people stay for a week.
-Almost 19 % people did not cancel their bookings even after not getting the same room which they reserved while booking hotel. Only 2.5 % people cancelled the booking.
+## Summary
+```
+1)Majority of the hotels booked are city hotel. Definitely need to spend the most targeting fund on those hotel.
+2)We also realise that the high rate of cancellations can be due high no deposit policies.
+3)We should also target months between May to Aug. Those are peak months due to the summer period.
+4)Majority of the guests are from Western Europe. We should spend a significant amount of our budget on those area.
+5)Given that we do not have repeated guests, we should target our advertisement on guests to increase returning guests.
 
-And many more conclusions.
+
+```
+## Suggestions:
+```
+Inferences and Conclusion
+1)Firstly, higher lead time has higher chance of cancellation. Also, history of previous cancellations increases chances of cancellation.
+2)Secondly, The City hotel has more guests during spring and autumn, when the prices are also highest, In July and August there are less visitors, although prices are lower. Thus, customers can get good deal on bookings in July and August in city hotel.
+3)Guest numbers for the Resort hotel go down slighty from June to September, which is also when the prices are highest. Thus, these months should be avoided for bookings.
+4)Thirdly, Broadly, Arpil to August is the peak season of bookings. Both hotels have the fewest guests during the winter.
+5)Fourthly, No deposit cancellations are high compared to other categories but these should not be discouraged per se as bookings in this category are also very high compared to non refundable type bookings.
+6)Fifthly, cancellations are high when done through agents compared to direct bookings. Hotels need to do marketing and give special incentives for direct bookings as these may establish personal one to one relationships promoting customer loyalty.
+7)The cancelled vs. non-cancelled bookings ratio for City Hotel was different than Resort Hotel. It can be established that the type of hotel can play a factor while determining reasons for cancellations.
+8)The majority of bookings for both hotels had no deposit collected (rather than partial or full). The same majority is demonstrated in cancelled bookings for both hotels as well.
+9)If we just look at non-cancelled bookings data, we can conclude that if people were to cancel more, the majority of the cancellations would be the ones with no deposit collected.
+10)It is possible that guests tend to cancel less after paying some deposit. Some sort of deposit collection (partial or full or credit card detail requirement) at booking may reduce overall cancellations.
+11)Third-party cancellations are higher than direct hotel bookings, although there is no significant difference in average daily rates.
+12)More direct hotel bookings (with offers/discounts) could lead to lower cancellations. The data does not point to an ideal daily rate to use.
+13)Non-repeat guests make most of the cancelled and non-cancelled bookings (especially weekday bookings).
+14)Conversion of non-repeat to repeat loyal customer base (staying during the week) could lead to lower cancellations.
+15)For non-direct bookings (majority of cancellations - City Hotel), months with higher cancellations generally had a higher average daily rate. The same cannot be proved conclusively for direct bookings.
+
 ```
 ## Challenges
 ```
+
 (1) There was a lot of duplicate data.
 (2) Data was present in wrong datatype format.
 (3) Choosing appropriate visualization techniques to use was difficult.
